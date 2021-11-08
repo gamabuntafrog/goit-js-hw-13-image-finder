@@ -1,0 +1,254 @@
+#load-more-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.stats {
+  width: 100%;
+}
+.stats {
+  color: black;
+  transition: 0.5s;
+}
+
+.stats,
+.stats-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.stats-item {
+  cursor: default;
+}
+.content__item:hover .stats {
+  color: whitesmoke;
+  transition: 0.5s;
+}
+.content__item {
+  background-color: whitesmoke;
+}
+.photo-card {
+  position: relative;
+}
+.stats {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+@media (max-width: 330px) {
+  img {
+    width: 100%;
+  }
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    font-size: 16px;
+  }
+  .content__gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+  }
+
+  .content__item {
+    // margin-bottom: 30px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .photo-card {
+    // height: 100px;
+  }
+
+  .material-icons {
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .content {
+    font-size: 10px;
+  }
+  .material-icons {
+    margin-right: 3px;
+  }
+
+  .basicLightbox__placeholder {
+    margin-top: 100%;
+  }
+
+  .basicLightbox__placeholder {
+    width: 90%;
+    height: 60%;
+  }
+  #load-more-button {
+    width: 140px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+    font-size: 16px;
+  }
+  .content__gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+  }
+
+  .content__item {
+    // margin-bottom: 30px;
+    width: 100%;
+    cursor: pointer;
+  }
+  .photo-card {
+    // height: 100px;
+  }
+
+  .material-icons {
+    margin-right: 5px;
+  }
+
+  .basicLightbox__placeholder {
+    margin-top: 50%;
+  }
+  .basicLightbox__placeholder {
+    width: 90%;
+    height: 60%;
+  }
+}
+@media (min-width: 768px) {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    font-size: 16px;
+  }
+  .content__gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+  }
+
+  .content__item {
+    // margin-bottom: 30px;
+    width: 50%;
+    cursor: pointer;
+  }
+  .photo-card {
+    height: 100%;
+  }
+
+  .material-icons {
+    margin-right: 5px;
+  }
+
+  .basicLightbox__placeholder {
+    margin-top: 20px;
+    width: 90%;
+    height: 60%;
+  }
+}
+@media (min-width: 1280px) {
+  .basicLightbox__placeholder {
+    width: auto;
+    height: 90%;
+  }
+}
+@media (min-width: 1920px) {
+  .content {
+    width: 1800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .content__gallery {
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+  }
+
+  .content__item {
+    // margin-bottom: 30px;
+    width: 600px;
+    height: 399px;
+    cursor: pointer;
+  }
+  .photo-card {
+    width: 600px;
+    height: 399px;
+  }
+
+  img {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .material-icons {
+    margin-right: 10px;
+  }
+
+  .basicLightbox__placeholder {
+    margin-top: 20px;
+  }
+
+  .basicLightbox__placeholder {
+    pointer-events: none;
+    // z-index: 1000; // Stack order
+    width: auto;
+    height: 90%;
+  }
+}
+.basicLightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  transition-duration: 0.4s; // Transition duration
+  display: flex;
+  justify-content: center;
+}
+
+.lightbox-img {
+  border-radius: 20px;
+}
+.basicLightbox__placeholder {
+  pointer-events: none;
+}
